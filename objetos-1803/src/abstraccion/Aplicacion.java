@@ -21,7 +21,15 @@ public class Aplicacion {
 
         //Mandamos a mostrar en pantalla el resultado
         System.out.println(c.centrigadosAFahrenheit());
-
+        
+        Longitudes l = new Longitudes();
+        
+        l.setMetros(1);
+        c.setLongitudes(l);
+        
+        
+        System.out.println(c.metrosAPies());
+        
     }
 
 }
