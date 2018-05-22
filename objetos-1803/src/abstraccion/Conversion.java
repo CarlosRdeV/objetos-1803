@@ -11,7 +11,14 @@ package abstraccion;
  */
 public class Conversion {
     /*Esta es una clase modelo, aqui lleva la logica*/
-    Grados grados;
+    private Grados grados;
+    
+    public float centrigadosAFahrenheit(){
+        //Este metodo tiene logica
+        //Todo lo declarado dentro de un metodo solo se puede usar en el metodo
+        float resultado= grados.getCentrigrados()*1.8F+32;
+         return resultado;
+    }
 
     public Grados getGrados() {
         return grados;
@@ -20,6 +27,4 @@ public class Conversion {
     public void setGrados(Grados grados) {
         this.grados = grados;
     }
-    
-    
 }

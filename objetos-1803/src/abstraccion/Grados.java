@@ -10,7 +10,7 @@ package abstraccion;
  * @author T-101
  */
 public class Grados {
-
+ /*Esta es una clase logica, aqui no lleva la logica*/
     private float centrigrados;
     private float fahrenheit;
 
