@@ -68,16 +68,16 @@ public class Ventanita extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField1)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextField1))
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField2)
+                    .addComponent(jLabel3)
                     .addComponent(jLabel4)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                .addContainerGap(140, Short.MAX_VALUE))
+                    .addComponent(jTextField2)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -106,7 +106,7 @@ public class Ventanita extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-         //Crear un objeto del tipo grados
+        //Crear un objeto del tipo grados
         Grados g = new Grados();
         //A este objeto le asignamos un valor a su atributo centigrados
         g.setCentrigrados(Float.parseFloat(jTextField1.getText()));
@@ -118,35 +118,26 @@ public class Ventanita extends javax.swing.JFrame {
         //c.centrigadosAFahrenheit();
 
         //Mandamos a mostrar en pantalla el resultado
-      jLabel2.setText(""+c.centrigadosAFahrenheit());
+        jLabel2.setText("" + c.centrigadosAFahrenheit());
 
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-            //Crear un objeto del tipo grados
-        Grados g = new Grados();
+        //Crear un objeto del tipo longitudes
+        Longitudes l = new Longitudes();
         //A este objeto le asignamos un valor a su atributo centigrados
-        g.setCentrigrados(20);
+        l.setMetros(Float.parseFloat(jTextField2.getText()));
 
         //Creamos un objeto de la clase conversion
         Conversion c = new Conversion();
-        c.setGrados(g);
+        c.setLongitudes(l);
         //Aplicamos el modelo (metodo)
-        //c.centrigadosAFahrenheit();
 
         //Mandamos a mostrar en pantalla el resultado
-        System.out.println(c.centrigadosAFahrenheit());
-        
-        Longitudes l = new Longitudes();
-        
-        l.setMetros(1);
-        c.setLongitudes(l);
-        
-        
-        System.out.println(c.metrosAPies());
-        
+        jLabel4.setText("" + c.metrosAPies());
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
