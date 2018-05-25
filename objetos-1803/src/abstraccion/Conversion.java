@@ -11,8 +11,8 @@ package abstraccion;
  */
 public class Conversion {
     /*Esta es una clase modelo, aqui lleva la logica*/
-    private Grados grados;
-    private Longitudes longitudes;
+    Grados grados;
+    Longitudes longitudes;
     
     public float centrigadosAFahrenheit(){
         //Este metodo tiene logica
@@ -42,5 +42,10 @@ public class Conversion {
 
     public void setLongitudes(Longitudes longitudes) {
         this.longitudes = longitudes;
+    }
+    
+    public float convertir(){
+        return 0;
+        
     }
 }
