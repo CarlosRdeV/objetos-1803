@@ -54,12 +54,13 @@ public class AplicacionPregunta {
         c1.setPreguntas(preguntas);
         
         
-        //Vamos a mostrar la pregunta
+        /*Vamos a mostrar la pregunta
         for(Pregunta p:preguntas){
             System.out.println(p.getTitulo());
             for(Opcion o:p.getOpciones())
                 System.out.println(o.getTitulo()+" "+o.isCorrecta());
         }
+        */
         
       //Vamos a crear otra pregunta
       //Comenzamos volviendo a crear las opciones porque es el mas general
@@ -73,5 +74,26 @@ public class AplicacionPregunta {
       o22.setCorrecta(false);
       
       //Ahora generamos la pregunta
+      Pregunta p21 = new Pregunta();
+      p21.setTitulo("Selecciona la opcion 'verdadero'");
+      
+      ArrayList<Opcion> opcionesp21 = new ArrayList<>();
+      opcionesp21.add(o12);
+      opcionesp21.add(o22);
+      
+      p21.setOpciones(opcionesp21);
+      
+      Cuestionario c2=new Cuestionario();
+      ArrayList<Pregunta> preguntas1=new ArrayList<>();
+      preguntas.add(p21);
+      c2.setPreguntas(preguntas1);
+      
+     //Vamos a mostrar la pregunta
+        for(Pregunta p:preguntas){
+            System.out.println(p.getTitulo());
+            for(Opcion o:p.getOpciones())
+                System.out.println(o.getTitulo()+" "+o.isCorrecta());
+        }
+      
     }
 }
