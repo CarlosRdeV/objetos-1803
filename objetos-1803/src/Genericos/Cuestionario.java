@@ -5,9 +5,10 @@
  */
 package Genericos;
 
-
 import java.util.*;
+
 public class Cuestionario {
+
     private ArrayList<Pregunta> preguntas;
     private float resultado;
 
@@ -26,6 +27,5 @@ public class Cuestionario {
     public void setResultado(float resultado) {
         this.resultado = resultado;
     }
-    
-    
+
 }

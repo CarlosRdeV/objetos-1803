@@ -12,6 +12,7 @@ import java.util.*;
  * @author T-101
  */
 public class Pregunta {
+
     private String titulo;
     private ArrayList<Opcion> opciones;
 
@@ -30,6 +31,5 @@ public class Pregunta {
     public void setOpciones(ArrayList<Opcion> opciones) {
         this.opciones = opciones;
     }
-    
-    
+
 }

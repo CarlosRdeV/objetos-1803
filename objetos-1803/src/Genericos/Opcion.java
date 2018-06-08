@@ -10,6 +10,7 @@ package Genericos;
  * @author T-101
  */
 public class Opcion {
+
     private String titulo;
     private boolean correcta;
 
@@ -28,7 +29,5 @@ public class Opcion {
     public void setCorrecta(boolean correcta) {
         this.correcta = correcta;
     }
-    
-    
-    
+
 }
