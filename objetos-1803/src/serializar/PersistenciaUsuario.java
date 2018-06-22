@@ -1,6 +1,6 @@
 package serializar;
 
-
+import java.util.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -18,6 +18,8 @@ public class PersistenciaUsuario  {
 
         //paso 1: Generar el archivo donde se va a guardar nuestro seializado
         File file = new File("archivaldo.yomero");
+        
+        
 
         //paso 2:Indicar que lo vamos a generar para escribir en el
         FileOutputStream fos = new FileOutputStream(file);
@@ -25,6 +27,11 @@ public class PersistenciaUsuario  {
         //paso 3:Escribir un objeto en el
         ObjectOutputStream oos = new ObjectOutputStream(fos);
         oos.writeObject(c);
+        
+        ArrayList<Cliente> Cliente1 = new ArrayList<>();
+        //Ahora vamos a agragas las opciones al ArrayList
+        Cliente1.add(c);
+        
         oos.close();
     }
 

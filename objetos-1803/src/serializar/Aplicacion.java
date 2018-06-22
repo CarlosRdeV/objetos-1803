@@ -3,14 +3,14 @@ package serializar;
 
 public class Aplicacion {
     public static void main (String[] args)throws Exception{
-        /*
+        
         Cliente c=new Cliente();
         c.setEdad(23);
         c.setNombre("Carlos");
         c.setSueldo(10000);
-        */
+        
         //No creamos un objeto de persistenciausuario porque no lo necesitamos y lo tenemos como static
-        /*PersistenciaUsuario.guardar(c);*/
+        //PersistenciaUsuario.guardar(c);//
         
         
        // Cliente c=PersistenciaUsuario.leer();
@@ -25,7 +25,7 @@ public class Aplicacion {
         
         PersistenciaUsuario.guardar(c);
         */
-        Cliente c=PersistenciaUsuario.leer();
+        /*Cliente c=PersistenciaUsuario.leer();*/
         System.out.println("Vamos a checar el nombre "+c.getNombre());
         
         
