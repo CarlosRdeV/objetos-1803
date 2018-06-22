@@ -16,22 +16,16 @@ public class PersistenciaUsuario  {
         //lo estatico tambien es compartido entre clases
         //Exception es un error en tiempo de ejecucion
 
-        //paso 1: Generar el archivo donde se va a guardar nuestro seializado
+        //paso 1: Generar el archivo donde se va a guardar nuestro seializado}
+        ArrayList<Cliente> clientes = new ArrayList<>();
         File file = new File("archivaldo.yomero");
-        
-        
-
+        if(file.exists())clientes= leer();
+        clientes.add(c);
         //paso 2:Indicar que lo vamos a generar para escribir en el
         FileOutputStream fos = new FileOutputStream(file);
-
         //paso 3:Escribir un objeto en el
         ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObject(c);
-        
-        ArrayList<Cliente> Cliente1 = new ArrayList<>();
-        //Ahora vamos a agragas las opciones al ArrayList
-        Cliente1.add(c);
-        
+        oos.writeObject(clientes);        
         oos.close();
     }
 
