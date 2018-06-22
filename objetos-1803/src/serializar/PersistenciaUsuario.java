@@ -38,7 +38,7 @@ public class PersistenciaUsuario  {
     //Ahora vamos a leer el archivo que previamente creamos, como vamos a regresar un objeto del tipo cliente,
     //en lugar de void sera Cliente
     
-    public static Cliente leer() throws Exception {
+    public static ArrayList<Cliente> leer() throws Exception {
         //Primero asignamos la ruta del archivo que vamos a leer
         File file = new File("archivaldo.yomero");
         //
@@ -46,9 +46,9 @@ public class PersistenciaUsuario  {
         //
         ObjectInputStream ois = new ObjectInputStream(fis);
         //
-        Cliente c = (Cliente) ois.readObject();
+        ArrayList<Cliente> clientes =  (ArrayList<Cliente>) ois.readObject();
         
-        return c;
+        return clientes;
     }
 
 }
