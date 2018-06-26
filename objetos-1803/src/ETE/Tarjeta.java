@@ -7,6 +7,11 @@ public class Tarjeta {
     private String nombre;
     private Float saldo;
 
+    @Override
+    public String toString() {
+        return "Tarjeta{" + "numero=" + numero + ", nombre=" + nombre + ", saldo=" + saldo + '}';
+    }
+
     public int getNumero() {
         return numero;
     }
@@ -29,6 +34,20 @@ public class Tarjeta {
 
     public void setSaldo(Float saldo) {
         this.saldo = saldo;
+    }
+
+    public Tarjeta() {
+    }
+
+    public Tarjeta(int numero, String nombre, Float saldo) {
+        this.numero = numero;
+        this.nombre = nombre;
+        this.saldo = saldo;
+    }
+
+    public Tarjeta(int numero, String nombre) {
+        this.numero = numero;
+        this.nombre = nombre;
     }
     
     

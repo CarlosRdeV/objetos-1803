@@ -21,6 +21,19 @@ public class Cliente {
     public void setTarjeta(Tarjeta tarjeta) {
         this.tarjeta = tarjeta;
     }
+
+    public Cliente() {
+    }
+
+    public Cliente(String nombre, Tarjeta tarjeta) {
+        this.nombre = nombre;
+        this.tarjeta = tarjeta;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "nombre=" + nombre + ", tarjeta=" + tarjeta + '}';
+    }
     
-    
+   
 }
