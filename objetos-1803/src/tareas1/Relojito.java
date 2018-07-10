@@ -15,6 +15,7 @@ public class Relojito extends Thread{
         int segundo=tiempo.getSecond();
         System.out.println("La hora es: "+hora+":"+minuto+":"+segundo);
         try{
+            //E4
         Thread.sleep(1000);
         }catch(InterruptedException e){
         
