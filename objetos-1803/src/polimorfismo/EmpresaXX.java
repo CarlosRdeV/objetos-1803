@@ -7,7 +7,7 @@ public class EmpresaXX {
     public static void main(String[] args) {
        //<> operador diamante
         ArrayList<Trabajador> trabajadores=new ArrayList<>();
-        
+       
         for(Trabajador t:trabajadores) {
         
         }
