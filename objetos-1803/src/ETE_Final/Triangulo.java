@@ -37,14 +37,14 @@ public class Triangulo extends Figura {
     @Override
     public void Perimetro() {
         lado = getLado();
-        System.out.println("El perimetro es: " + 3 * lado);
+        System.out.println("El perimetro del triangulo es: " + 3 * lado);
     }
 
     @Override
     public void Area() {
         lado = getLado();
         altura = getAltura();
-        System.out.println("El Area es: " + lado * altura / 2);
+        System.out.println("El Area del triangulo es: " + lado * altura / 2);
     }
 
 }

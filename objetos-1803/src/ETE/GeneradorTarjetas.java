@@ -1,9 +1,8 @@
-
 package ETE;
 
 import java.util.*;
 public class GeneradorTarjetas {
-    public ArrayList<Cliente> clientes;
+    private ArrayList<Cliente> clientes;
 
     public GeneradorTarjetas() {
         this.clientes = new ArrayList<>();
@@ -25,8 +24,6 @@ public class GeneradorTarjetas {
         clientes.add(c3);
         clientes.add(c4);
     }
-
-   
 
     public ArrayList<Cliente> getClientes() {
         return clientes;

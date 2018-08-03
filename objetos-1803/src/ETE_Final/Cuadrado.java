@@ -31,13 +31,13 @@ public class Cuadrado extends Figura {
     @Override
     public void Perimetro() {
         lado = getLado();
-        System.out.println("El perimetro es: " + 4 * lado);
+        System.out.println("El perimetro del cuadrado es: " + 4 * lado);
     }
 
     @Override
     public void Area() {
         lado = getLado();
-        System.out.println("El Area es: " + lado * lado);
+        System.out.println("El Area del cuadrado es: " + lado * lado);
     }
 
 }

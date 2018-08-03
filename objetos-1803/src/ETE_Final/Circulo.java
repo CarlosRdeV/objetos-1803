@@ -31,13 +31,13 @@ public class Circulo extends Figura {
     @Override
     public void Perimetro() {
         radio=getRadio();
-        System.out.println("El perimetro es: " + 3.1416 * 2 * radio);
+        System.out.println("El perimetro del circulo es: " + 3.1416 * 2 * radio);
     }
 
     @Override
     public void Area() {
         radio = getRadio();
        
-        System.out.println("El Area es: " + 3.1416 * radio * radio);
+        System.out.println("El Area del circulo es: " + 3.1416 * radio * radio);
     }
 }
